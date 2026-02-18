@@ -1,0 +1,30 @@
+p{
+  font-family: Roboto;
+}
+
+.thumbnail{
+  width: 300px;
+  display: block;
+}
+
+.search-bar{
+  display: block;
+}
+
+.video-preview{
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.video-title {
+  width: 300px;
+  font-weight: bold;
+}
+.video-author,
+.video-stats{
+  color: #606060;
+}
+
+
