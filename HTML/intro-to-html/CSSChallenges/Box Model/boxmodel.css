@@ -1,0 +1,68 @@
+
+  .back-button{
+      margin-right: 8px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .search-result {
+      margin-left: 4px;
+      margin-right: 4px;
+      font-size: 18px;
+  }
+  .next-button{
+      margin-right: 8px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  
+  .stretch-button{
+      background-color: green;
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding: 8px 15px;
+      cursor: pointer;
+      transition: padding 1s;
+  }
+  .stretch-button:hover{
+      padding: 18px 36px;
+  }
+
+  .shadow-button{
+      background-color: green;
+      color: white;
+      border: none;
+      font-size: 18px;
+      margin-right: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      padding-right: 16px;
+      cursor: pointer;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+  }
+  .shadow-button:active{
+      margin-top: 3px;
+      margin-left: 3px;
+      box-shadow: none;
+  }
+
+  .number-buttons{
+      background-color: green;
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding: 8px 15px;
+      cursor: pointer;
+      transition: padding 0.5s;
+      margin: 5px 5px 5px 5px;
+  }
+  .number-buttons:hover{
+      padding: 8px 25px;
+  }
+  

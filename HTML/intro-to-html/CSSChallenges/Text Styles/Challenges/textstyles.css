@@ -1,0 +1,67 @@
+
+      p{
+          font-family: Arial;
+          margin-top: 0px;
+          margin-bottom: 35px;
+      }
+
+      .five-a{
+          font-family: Tahoma;
+          font-weight: bold;
+      }
+
+      .five-b1{
+          
+          font-weight: bold;
+          font-size: 20px;
+          margin-bottom: 0px;
+      }
+      .five-b2{
+          color: grey;
+          font-style: italic;
+          font-size: 15px;
+      }
+
+      .five-c1{
+          font-family: Verdana;
+          margin-bottom: 3px;
+          font-weight: bold;
+      }
+      .five-c2{
+          font-family: Verdana;
+          font-size: 14px;
+          color: grey;
+          margin-bottom: 14px;
+      }
+      .five-c3{
+          font-family: Verdana;
+          font-size: 15px;
+          width: 280px;
+          margin-bottom: 12px;
+      }
+      .get-started{
+          color: white;
+          background-color: green;
+          border: none;
+          padding: 6px 15px;
+          border-radius: 5px;
+          margin-bottom: 50px;
+      }
+
+      .five-d1{
+          text-align: center;
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 20px;
+      }
+      .five-d2{
+          font-size: 12px;
+          margin-bottom: 14px;
+          text-align: center;
+      }
+      .five-d3{
+          font-size: 10px;
+          margin-bottom: 12px;
+          text-align: center;
+          color: blue;
+      }

@@ -1,0 +1,87 @@
+
+p{
+  font-family: Arial;
+  margin: 0;
+}
+button{
+  font-family: Arial;
+  margin-left: 340px;
+  cursor: pointer;
+}
+
+.disclaimer{
+  color:rgb(25, 171, 25);
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+.product{
+  font-size: 20px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+.slogan{
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.price{
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.buy-button{
+  background-color: rgb(47, 110, 213);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.exchange-rate{
+  font-size: 28px;
+}
+.small-grey-text{
+  font-size: 15px;
+  color: grey;
+}
+.percent-increase{
+  margin-top: 5px;
+  color: green;
+}
+.after-hours{
+  margin-top: 8px;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+.author{
+  font-weight: bold;
+  font-size: 16px;
+}
+.tweeter{
+  font-weight: normal;
+  color: grey;
+}
+.body{
+  margin-top: 12px;
+  width: 500px;
+  line-height: 22px;
+}
+.sub-body{
+  margin-top: 30px;
+}
+.mention{
+  color: rgb(29 161 242);
+}
+.mention:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+    

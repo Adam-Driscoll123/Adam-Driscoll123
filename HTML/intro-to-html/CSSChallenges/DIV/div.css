@@ -1,0 +1,48 @@
+button{
+  cursor:pointer;
+}
+
+.red-square{
+  background-color:red;
+  width: 25px;
+  height: 25px;
+  margin-bottom:10px;
+}
+
+.green-circle{
+  background-color:green;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+}
+
+.feedback{
+  margin-top: 15px;
+  width: 175px;
+  height: 60px;
+  border: solid;
+  border-width: 0.5px;
+  margin-bottom: 30px;
+}
+.satisfied,
+.yes-no
+{
+  font-size: 8px;
+  margin-left: 10px;
+}
+
+.youtube-music{
+  background-color: #212121;
+  padding: 5px 8px;
+  font-family: arial;
+  width: 200px;
+}
+.install{
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+.add{
+  color: #7d7d7ds;
+  font-size: 10px;
+}

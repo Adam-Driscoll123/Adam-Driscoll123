@@ -1,0 +1,113 @@
+
+.uber-request{
+  background-color: black;
+  color: white;
+  border-style: solid;
+  width: 75px;
+  height: 30px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.uber-request:hover{
+  opacity:0.8;
+}
+
+.add-to-cart{
+  background-color: rgb(255, 216, 20, 0.8);
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: background-color 0.15s;
+}
+.add-to-cart:hover{
+  background-color: rgba(255, 216, 20, 1)
+}
+
+.sign-up{
+  background-color: rgb(46,164,79);
+  border: none;
+  border-radius: 3px;
+  width: 48px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 9px;
+  color: white;
+  transition: box-shadow 0.15s;
+}
+.sign-up:hover{
+  box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.1);
+}
+
+.get-started{
+  margin-top:10px;
+  margin-left: 8px;
+  background-color: rgb(121,82,179,0.9);
+  border: none;
+  border-radius: 1.5px;
+  width: 60px;
+  height: 23px;
+  cursor: pointer;
+  font-size: 9px;
+  color: white;
+  transition: background-color 0.15s;
+}
+.get-started:hover{
+  background-color: rgb(121,82,179,1);
+}
+
+.download{
+  background-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 1px;
+  width: 55px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 9px;
+  color: rgb(108,117,125);
+  transition: color 0.15s,
+              background-color 0.15s;
+}
+.download:hover{
+  color: white;
+  background-color: rgb(108,117,125);
+
+}
+
+.apply{
+  margin-top: 10px;
+  background-color: rgba(10,102,194, 0.7);
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 10px;
+  width: 140px;
+  height: 19px;
+  cursor: pointer;
+  font-size: 9px;
+  color: white;
+  transition: background-color 0.15s;
+}
+.apply:hover{
+  background-color: rgba(10,102,194, 1);
+}
+
+.save{
+  background-color: white;
+  border-style: solid;
+  border-color: blue;
+  border-width: 0.75px;
+  border-radius: 10px;
+  width: 55px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 9px;
+  color: blue;
+}
+.save:hover{
+  border-width: 0.5px;
+
+}
