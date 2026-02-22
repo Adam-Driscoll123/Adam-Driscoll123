@@ -1,10 +1,10 @@
 p{
-  font-family: Roboto;
+  font-family: Roboto, Arial;
+  margin: 0px;
 }
 
 .thumbnail{
-  width: 300px;
-  display: block;
+  width: 100%;
 }
 
 .search-bar{
@@ -12,19 +12,45 @@ p{
 }
 
 .video-preview{
-  width: 300px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 15px;
+  
+}
+
+.profile-picture{
+  width: 40px;
+  border-radius: 50px;
+}
+
+.thumbnail-row{
+  margin-bottom: 12px;
 }
 
 .video-title {
-  width: 300px;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+  width: 250px;
+  font-size: 14px;
 }
 .video-author,
 .video-stats{
   color: #606060;
+  font-size: 12px;
+}
+.video-author{
+  margin-bottom: 4px;
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.youtube-page{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
 }
 
 

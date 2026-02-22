@@ -37,24 +37,21 @@ button:active{
   color: white;
   border-radius: 15px;
   border: none;
-  
-
 }
 
 .character-card{
-  margin-top:30px;
-  width:500px;
-  height:725px;
+  margin-top:140px;
+  width:400px;
+  height:625px;
   font-family:Arial;
   box-shadow: 0px 0px 5px;
   display: inline-block;
+  margin-right: 20px;
 }
 .character-pfp{
-  width: 500px;
-  height:500px;
+  width: 400px;
+  height:400px;
   object-fit: cover;
-  object-position: center;
-  margin: 0px;
 
 }
 
@@ -70,23 +67,47 @@ button:active{
   font-weight: bold;
   margin-top: 3px;
   margin-bottom: 15px;
-  font-size:40px;
+  font-size:34px;
 }
 
 .mutual-friends{
-  margin-bottom: 30px;
-  font-size:30px;
-  
-
+  margin-bottom: 0px;
+  font-size:26px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  color: #605f5f;
 }
 
 .add-friend{
-  font-size:30px;
+  font-size:26px;
   width: 225px;
   padding: 15px;
   background-color: #1877F2;
   color: white;
-  border-width: 1px;
+  border:none;
   border-radius: 8px;
-
 }
+
+.info{
+  vertical-align: top;
+  display:inline-block;
+  width: 400px;
+  margin-bottom: 25px;
+}
+
+.user-pfp{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+.pfp-container{
+  width: 80px;
+  display:inline-block;
+}
+
+
+
