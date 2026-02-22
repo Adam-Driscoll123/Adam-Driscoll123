@@ -1,0 +1,85 @@
+
+.blueitem{
+	background-color: lightblue;
+}
+
+.task12a{
+	display:flex;
+	margin-bottom: 30px;
+}
+.task12a-left{
+	width: 200px;
+	background-color:lightblue;
+}
+.task12a-right{
+	width: 75px;
+	background-color: lightpink;
+}
+
+.task12b{
+	display:flex;
+	margin-bottom: 30px;
+	max-width: 500px;
+}
+.task12b-left{
+	width: 50px;
+	background-color:lightblue;
+}
+.task12b-middle{
+	flex: 1;
+	background-color:lightpink;
+}
+.task12b-right{
+	width: 75px;
+	background-color: lightblue;
+}
+
+.task12c{
+	display:flex;
+	margin-bottom: 30px;
+	max-width: 500px;
+	justify-content: space-between;
+}
+.task12c-item{
+	background-color: lightblue;
+}
+
+.task12d{
+	display:flex;
+	height:50px;
+	margin-bottom: 30px;
+	max-width: 500px;
+	justify-content: space-between;
+	border: solid;
+	border-width: 1px;
+	border-color: grey;
+	align-items: center;
+}
+
+.task12e-container{
+	width: 300px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200,200,200);
+	border-radius: 6px;
+	font-family: Arial;
+}
+
+.flexbox{
+	flex-direction: row;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 12px 0px 12px;
+	margin: 0px;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
+.notifications{
+	background-color: rgb(49,109,245);
+	color: white;
+	padding: 5px 12px 5px 12px;
+	border-radius: 12px;
+	margin: 0px;
+}
