@@ -3,10 +3,9 @@ body{
 }
 
 .gmail{
-  font-family: Arial, Helvetica, sans-serif;
-  width: 350px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  width: 260px;
   padding: 8px 12px 30px;
-  display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 3px lightgrey;
   border-radius: 4px;
@@ -21,20 +20,19 @@ body{
 
 .email-container{
   display: flex;
-  background-color: lightblue;
-
 }
 
 .pfp-container{
   border-radius: 50%;
   display: flex;
   justify-content: end;
+  align-items: center;
   overflow: hidden;
   flex-shrink: 0;
 }
 .picture{
-  width: 50px;
-  height: 50px;
+  width: 36px;
+  height: 36px;
   object-fit: cover;
   object-position: center;
 }
@@ -42,21 +40,25 @@ body{
 .email-info{
   display: flex;
   flex-direction: column;
+  margin-left: 8px;
+  line-height: 12.5px;
 }
 
 .email-sender{
-
+  display: flex;
+  justify-content: space-between;
 }
 
+.sender-name,
 .email-subject{
-
+  font-weight: 700;
 }
 
-.email-body{
-
+.email-body,
+.timestamp{
+  color:grey;
 }
 
+.bold-text{
 
-.email-subject{
-  display: inline-block;
 }
