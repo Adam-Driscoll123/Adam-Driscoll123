@@ -4,5 +4,9 @@ p{
 }
 
 body{
-    margin:0;
+  margin:0;
+  padding-top: 90px;
+  padding-left: 100px;
+  background-color: rgb(249, 249, 249);
+    
 }
