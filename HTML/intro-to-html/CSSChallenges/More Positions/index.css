@@ -1,0 +1,79 @@
+
+button{
+  cursor: pointer;
+  transition: 0.1s;
+}
+button:active{
+  background-color: rgb(201, 201, 201);
+
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-container{
+  position: relative;
+}
+.close-button{
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  border-style: solid;
+}
+
+.bottom-right-box{
+  position: fixed;
+  width: 320px;
+  height: 180px;
+  background-color: #808080;
+  bottom: 20px;
+  right: 20px;
+}
+
+.timestamp{
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-family: Roboto, Arial;
+  bottom: 12px;
+  right: 12px;
+  font-size: 18px;
+  padding: 2px 5px;
+}
+
+.product-container{
+  position: relative;
+  display: inline-block;
+}
+.product-overlay{
+  display: flex;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.85);
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart{
+  font-size:25px;
+  background-color: white;
+  padding: 15px 20px;
+}
+.discount-sticker{
+  position: absolute;
+  background-color: black;
+  color: white;
+  right: 0px;
+  top: 15px;
+  font-size: 30px;
+  padding: 10px 20px;
+}
