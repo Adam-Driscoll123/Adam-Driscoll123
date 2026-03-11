@@ -12,6 +12,7 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(206, 206, 206);
+  z-index: 100;
 }
 
 .left-section{
@@ -96,6 +97,22 @@
 .notifications-icon{
   height: 24px;
 }
+.notifications-icon-container{
+  position: relative;
+}
+.notifications-count{
+  position: absolute;
+  top: -2 px;
+  right: -5px;
+  background-color: #d01818;
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
+
+}
+
 .current-user-picture{
   height: 32px;
   border-radius: 16px;

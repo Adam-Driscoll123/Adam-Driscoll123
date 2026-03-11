@@ -1,0 +1,117 @@
+body{
+  padding-top: 100px;
+  font-family: Arial;
+}
+
+button{
+  cursor: pointer;
+  transition: opacity 0.1s;
+}
+button:active{
+  opacity: 0.85;
+}
+
+.header{
+  display: flex;
+  background-color: white;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 80px;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+}
+.left-section{
+  display: flex;
+  align-items: center;
+}
+
+.discord-pfp,
+.pfp{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name{
+  display: inline-block;
+  font-weight: 700;
+} 
+
+.add-friend{
+  background-color: #3872d3;
+  color: white;
+  border-style: none;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.message{
+  padding: 8px;
+  background-color: #e4e5e9;
+  border-style: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.discord-sidebar{
+  top: 80px;
+  left: 0px;
+  bottom: 0px;
+  width: 250px;
+  background-color: #2f3135;
+  display: flex;
+  position: fixed;
+  
+
+}
+
+.discord-pfp-container{
+  background-color: #202226;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 5px 8px 8px;
+
+}
+
+.info-container{
+  padding-left: 20px;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.discord-pfp{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.info-header{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 600;
+  padding-top: 15px;
+  align-items: center;
+
+}
+
+.info{
+  color: #dadada;
+}
+
+.add-button{
+  font-size: 25px;
+  font-weight: 500;
+  color: #878787;
+}
+
+.channels{
+  color: #878787;
+}
