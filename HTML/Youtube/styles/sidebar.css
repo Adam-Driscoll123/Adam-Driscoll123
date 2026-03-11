@@ -9,7 +9,11 @@
   background-color: white;
   width: 72px;
   font-family: Roboto, Arial;
+<<<<<<< HEAD
   z-index: 200;
+=======
+  
+>>>>>>> 64b280eea3a6f83f5f565c974cac013950259c1e
 }
 
 .sidebar-link{
@@ -27,9 +31,15 @@
   background-color: rgb(228, 228, 228);
 }
 .sidebar-icon{
+<<<<<<< HEAD
   height: 24px;
   display: block;
   margin-bottom: 6px;
+=======
+  height: 28px;
+  display: block;
+  margin-bottom: 8px;
+>>>>>>> 64b280eea3a6f83f5f565c974cac013950259c1e
 }
 .sidebar-name{
   font-size: 10px;
