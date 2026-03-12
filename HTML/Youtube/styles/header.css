@@ -1,12 +1,9 @@
 button{
   cursor: pointer;
 }
-a{
-  text-decoration: none;
-}
+
 
 .header{
-  font-family: Roboto, Arial;
   height: 55px;
   display: flex;
   flex-direction: row;
@@ -22,7 +19,9 @@ a{
   z-index: 100;
 }
 
-.left-section{
+.left-section,
+.middle-section,
+.right-section{
   display: flex;
   align-items: center;
 }
@@ -31,13 +30,9 @@ a{
   margin-left: 70px;
   margin-right: 35px;
   max-width: 450px;
-  display: flex;
-  align-items: center;
 }
 .right-section{
   width: 180px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-right: 20px;
   flex-shrink: 0;
@@ -57,13 +52,11 @@ a{
   height: 34px;
   padding-left: 10px;
   font-size: 16px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(170, 170, 170);
   border-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
   outline: none;
+  border: 1px solid rgb(170, 170, 170);
 }
 .search-bar::placeholder{
   font-size: 16px;
@@ -72,9 +65,7 @@ a{
   height: 38px;
   width: 66px;
   background-color: rgb(240, 240, 240);
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(170, 170, 170);
+  border: 1px solid rgb(170, 170, 170);
   margin-left: -1px;
   margin-right: 10px;
   transition: background-color 0.15s;
@@ -89,6 +80,15 @@ a{
 .voice-search-button:active{
   background-color: rgb(219, 219, 219);
   
+}
+
+.voice-search-button{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  transition: background-color 0.15s;
 }
 
 .search-button,
@@ -129,15 +129,6 @@ a{
 
 }
 
-.voice-search-button{
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  border: none;
-  background-color: rgb(245, 245, 245);
-  transition: background-color 0.15s;
-}
-
 .search-icon,
 .voice-icon,
 .upload-icon,
@@ -148,10 +139,6 @@ a{
   cursor: pointer;
 }
 
-.notifications-icon-container{
-  height: 24px;
-  position: relative;
-}
 .notifications-count{
   position: absolute;
   top: -2px;
@@ -169,8 +156,6 @@ a{
   border-radius: 16px;
 }
 
-.video-link{
-  color: black;
-}
+
 
 
