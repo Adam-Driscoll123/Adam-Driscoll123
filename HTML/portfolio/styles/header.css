@@ -1,0 +1,18 @@
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.header-left{
+  font-size: 60px;
+  color: #d81159;
+}
+
+.pfp{
+  width:100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+}
