@@ -28,11 +28,7 @@ body{
   text-align: center;
 }
 
-.icon{
-  width: 50px;
-  margin-right: 20px;
-  
-}
+
 
 .contact-info,
 .social-info{
@@ -91,3 +87,4 @@ body{
 .skills-rating{
   margin-left: 100px;
 }
+
