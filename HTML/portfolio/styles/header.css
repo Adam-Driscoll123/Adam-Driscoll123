@@ -1,18 +1,16 @@
 .header{
-  display:flex;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 120px;
+  background-color: darkgrey;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
+  
+  
 }
 
 .header-left{
-  font-size: 60px;
-  color: #d81159;
-}
-
-.pfp{
-  width:100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 100px;
+  display: flex;
 }
