@@ -7,20 +7,21 @@ body{
   margin: 0px 50px;
 }
 
-
-
 .title{
   font-size: 75px;
   text-align: center;
   margin-bottom: 150px;
 }
 
-.section{
+.section,
+.skills-section{
   display: grid;
   grid-template-columns: 1fr 3fr;
   font-size: 30px;
   margin-bottom: 150px;
 }
+
+
 
 .info-title{
   font-size: 30px;
@@ -43,8 +44,49 @@ body{
 .h1{
   font-size: 38px;
   margin: 0px;
+  margin-bottom: 20px;
 }
 .h2,
 .info-body{
   font-size: 30px;
+  margin-top: 0px;
+}
+.info-body{
+  margin-bottom: 40px;
+}
+
+.skills-info{
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.skills-section .h1{
+  display: inline-block;
+}
+
+.full-dot,
+.hollow-dot{
+  height: 50px;
+  width: 50px;
+  border: 5px solid black;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: black;
+}
+.hollow-dot{
+  background-color: white;
+}
+
+
+
+.skills-name,
+.skills-rating{
+  display: inline-block;
+  width: 400px;
+}
+
+.skills-rating{
+  margin-left: 100px;
 }
