@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+  </head>
+
+  <body>
+
+
+
+
+
+    <script>
+      /*
+      const age = 15;
+
+
+      if(false) {
+        console.log('hello')
+      } 
+      else{
+        console.log('else')
+      }
+
+      if(age >= 16){
+        console.log('You can drive');
+      }
+      else if(age >= 14){
+        console.log('Almost there!');
+      }
+      else{
+        console.log('You cannot drive');
+      }
+
+      const result = true ? 'truthy' : 'falsey'
+      console.log(result);
+
+      false && console.log('hello');
+
+      const currency = undefined || 'USD';
+      console.log(currency);*/
+
+      /*Challenges
+      const name = "Adam"
+      let hour = 18;
+      if (hour>=6 && hour<12){
+        console.log(`Good morning ${name}!`)
+      }
+      else if (hour>=12 && hour<17){
+        console.log(`Good afternoon ${name}!`)
+      }
+      else{
+        console.log(`Good morning ${name}!`)
+      }
+
+      let age = 65;
+      const isHoliday = true;
+      if ((age<=6 || age>=65)&&isHoliday){
+        console.log("Discount!")
+      }
+      else{
+        console.log("No discount")
+      }*/
+
+      //Coin Flip
+      const randomNumber = Math.random();
+      let guess = "heads";
+
+      let result = (randomNumber<0.5) ? "heads" : "tails";
+      
+      console.log(`You guessed ${guess} and the result was ${result}`)
+      if (guess===result){
+        console.log("You win!")
+      }
+      else{
+        console.log("You lose.")
+      }
+
+      
+    </script>
+  </body>
+
+  
+</html>

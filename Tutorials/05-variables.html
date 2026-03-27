@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables</title>
+  </head>
+
+
+  <body>
+    <p>Cart Quantity</p>
+    <button
+      onclick="console.log(productCount)">
+      Show Quantity
+    </button>
+    <button
+      onclick="addToCart(+1)
+               ">Add to Cart
+    </button>
+    <button 
+      onclick="addToCart(+2)
+                  ">+2
+    </button>
+    <button 
+      onclick="addToCart(+3)">+3
+    </button>
+    <button 
+      onclick="addToCart(-1)">Remove from Cart
+    </button>
+    <button 
+      onclick="addToCart(-2)">-2
+    </button>
+    <button 
+      onclick="addToCart(-3)">-3
+    </button>
+    <button onclick="productCount = 0;
+                     console.log(productCount)">Reset
+    </button>
+    
+    <script>
+      let productCount = 0;
+
+      function addToCart(quantity){
+        if(isValidQuantity(quantity)){
+                  productCount+=quantity;
+                  console.log(productCount);
+                  }
+      }
+
+      function isValidQuantity(items){
+        //Check if items above 10
+        if (productCount+items>10){
+          console.log("Too many items")
+          return false;
+        }
+        //Check if items below 0
+        else if (productCount+items<0){
+          console.log("Not enough items in cart")
+          return false;
+        }
+        return true;
+      }
+      
+      
+      
+
+      
+    </script>
+
+  </body>
+</html>
