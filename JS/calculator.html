@@ -9,67 +9,57 @@
   <body>
     <p>
       <button 
-        onclick="calculation+='7';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('7'));">
         7
       </button>
 
       <button 
-        onclick="calculation+='8';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('8'));">
         8
       </button>
 
       <button  
-        onclick="calculation+='9';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('9'));">
         9
       </button>
     </p>
 
     <p>
       <button 
-        onclick="calculation+='4';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('4'));">
         4
       </button>
 
       <button 
-        onclick="calculation+='5';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('5'));">
         5
       </button>
 
       <button 
-        onclick="calculation+='6';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('6'));">
         6
       </button>
     </p>
     <p>
       <button 
-        onclick="calculation+='1';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('1'));">
         1
       </button>
 
       <button 
-        onclick="calculation+='2';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('2'));">
         2
       </button>
 
       <button 
-        onclick="calculation+='3';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation('3'));">
         3
       </button>
     </p>
     
     <p>
       <button 
-        onclick="calculation+=' + ';
-        console.log(calculation);">
+        onclick="console.log(updateCalculation(' + '));">
         +
       </button>
 
@@ -86,5 +76,9 @@
 
   <script>
     let calculation = "";
+
+    function updateCalculation(character){
+      return calculation+=character;
+    }
   </script>
 </html>

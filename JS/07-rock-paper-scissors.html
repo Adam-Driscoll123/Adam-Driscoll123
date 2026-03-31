@@ -29,10 +29,23 @@
       checkWinner('Scissors', computerMove);
 
     ">Scissors</button>
+    <button
+    onclick="
+      score.Wins=0;
+      score.Losses=0;
+      score.Ties=0;">Reset score</button>
 
     <script>
       let computerMove = '';
       let result = '';
+      const score = {
+        Wins: 0,
+        Losses: 0,
+        Ties: 0
+      }
+      
+      console.log(localStorage.getItem('score'));
+
       function computerGuess(){
         let randomNumber = Math.random();
 
@@ -62,9 +75,21 @@
         else if (playerGuess === 'Scissors'){
           result = (computerMove==='Paper') ? 'win!' : 'lose.';
         }
-        
+        if (result==='win!'){
+          score.Wins++;
+        }
+        else if (result==='lose.'){
+          score.Losses++;
+        }
+        else{
+          score.Ties++;
+        }
 
-        return alert(`You picked ${playerGuess} and computer picked ${computerMove}. You ${result}`);
+        
+        localStorage.setItem('score', JSON.stringify(score));
+        return alert(`You picked ${playerGuess} and computer picked ${computerMove}. You ${result} 
+        Score: Wins: ${score.Wins}, Losses: ${score.Losses}, Ties: ${score.Ties}`);
+        
       }
     </script>
   </body>
