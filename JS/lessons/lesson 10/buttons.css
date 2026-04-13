@@ -1,0 +1,17 @@
+button{
+  cursor: pointer;
+}
+
+.button{
+  font-family: Arial;
+  font-size: 30px;
+  margin: 15px;
+  border: none;
+  padding: 10px 15px;
+  transition: background-color 0.15s;
+}
+
+.is-toggled{
+  color: white;
+  background-color: black;
+}

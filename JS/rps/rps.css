@@ -1,0 +1,32 @@
+button{
+  cursor: pointer;
+}
+body{
+  font-family: Arial;
+  background-color: #191919;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.move-button{
+  background-color: #191919;
+  border: white 3px solid;
+  border-radius: 50%;
+  padding: 30px;
+  margin-right: 8px;
+}
+
+.result,
+.score{
+  font-size: 20px;
+}
+
+.reset-button{
+  padding: 8px 16px;
+}
+
+.move-image{
+  width: 50px;
+
+}
