@@ -22,7 +22,8 @@ body{
   font-size: 20px;
 }
 
-.reset-button{
+.reset-button,
+.auto-play-button{
   padding: 8px 16px;
 }
 
@@ -30,3 +31,25 @@ body{
   width: 50px;
 
 }
+
+.message-container{
+  background-color: #77966D;
+  font-size: 20px;
+  display: none;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 750px;
+}
+.message-container--active{
+  display:flex;
+}
+
+.yes-button,
+.no-button{
+  font-size: 30px;
+  margin-left: 20px;
+  width: 100px;
+  background-color: #FFFFFA;
+  border: 1px solid;
+}
+

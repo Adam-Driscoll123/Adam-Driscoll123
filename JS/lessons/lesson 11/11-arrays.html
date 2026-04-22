@@ -139,7 +139,7 @@
       return positiveTotal;
     }
     console.log(countPositive(test));
-    */
+    
     minMaxTest = [-1, -5, 8, 9, 3];
     function minMax(array){
       if (array.length===0){
@@ -164,7 +164,19 @@
     }
     console.log(minMax(minMaxTest));
     console.log(minMax([]));
-    console.log(minMax([3]));
+    console.log(minMax([3]));*/
+
+    //Arrays are references
+    const array1 = [1, 2, 3];
+    //Instead of copying the reference, you copy the array
+    //using slice
+    const array2 = array1.slice();
+    array2.push(4);
+    console.log(array2);
+    console.log(array1);
+
+    const [firstValue, secondValue] = [1, 2, 3];
+    console.log(firstValue);
 
 
   </script>
