@@ -5,7 +5,6 @@ import { formatCurrency } from './utils.js';
 generateHTML();
 
 function generateHTML(){
-
   let cartSummaryHTML = '';
 
   cart.forEach((cartItem) => {

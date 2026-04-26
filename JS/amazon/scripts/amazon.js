@@ -5,6 +5,7 @@ import { formatCurrency } from './utils.js';
 let productsHTML = '';
 let timeoutID;
 
+updateCartHTML();
 
 products.forEach((product) => {
 
