@@ -32,21 +32,21 @@
       onclick="addToCart(-3)">-3
     </button>
     <button onclick="productCount = 0;
-                     updateQuantity();">Reset
+                     updateItemQuantity();">Reset
     </button>
     <p class="cart-quantity"></p>
     
     <script>
       let productCount = localStorage.getItem('quantity') || 0;
       const cartElement = document.querySelector('.cart-quantity');
-      updateQuantity();
+      updateItemQuantity();
       
 
       function addToCart(quantity){
         if(isValidQuantity(quantity)){
             productCount+=quantity;
         }
-        updateQuantity();
+        updateItemQuantity();
       }
 
       function isValidQuantity(items){
@@ -63,7 +63,7 @@
         return true;
       }
 
-      function updateQuantity(){
+      function updateItemQuantity(){
         localStorage.setItem('quantity', productCount);
         cartElement.innerHTML = `Cart Quantity: ${productCount}`;
       }
