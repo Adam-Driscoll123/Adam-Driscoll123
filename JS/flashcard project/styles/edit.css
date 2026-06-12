@@ -1,0 +1,102 @@
+.confirm-changes-button{
+  margin-bottom: 20px;
+  background-color: #698f3f;
+  font-size: 30px;
+  border-radius: 20px;
+  color: white;
+  padding: 6px;
+  border: none;
+
+}
+
+.dark .confirm-changes-button{
+  color: rgb(220, 220, 220);
+  background-color:#527032 ;
+}
+
+.edit-layout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-flashcard-button{
+  color: white;
+  font-size: 20px;
+  background-color: #60AFFF;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.dark .add-flashcard-button{
+  background-color: #1691b4;
+}
+
+#overlay{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top:0;right:0;left:0;bottom:0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#overlay__container{
+  background-color: white;
+  position: relative;
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.dark #overlay__container{
+  background-color: #3a3938;
+}
+
+#overlay__buttons__row{
+  display: flex;
+  column-gap: 10px;
+
+}
+
+#overlay__delete__button{
+  border: 1px solid black;
+  padding: 3px 5px;
+  color: white;
+  background-color: rgb(223, 54, 54);
+  
+}
+
+#overlay__close__button{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 16px;
+
+}
+
+.dark #overlay__close__button{
+  color: white;
+}
+
+.term-text-input,
+.definition-text-input{
+  width: 250px;
+  height: 75px;
+  margin: 15px;
+}
+
+.dark .term-text-input,
+.dark .definition-text-input{
+  background-color: #666361;
+}

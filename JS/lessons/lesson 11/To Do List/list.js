@@ -16,7 +16,7 @@ function renderList(){
       <div>${dueDate}</div>
       <button 
       
-        class="delete-button js-delete-button"
+        class="bin-button js-bin-button"
         >Delete</button>`;
       
     toDoListHTML+=html;
@@ -24,7 +24,7 @@ function renderList(){
   document.querySelector('.js-to-do-list').innerHTML = toDoListHTML;
   localStorage.setItem('list', JSON.stringify(toDoList));
   
-  document.querySelectorAll('.js-delete-button').forEach((deleteButton, index) => {
+  document.querySelectorAll('.js-bin-button').forEach((deleteButton, index) => {
     deleteButton.addEventListener('click', () => {
       toDoList.splice(index, 1);
       renderList();

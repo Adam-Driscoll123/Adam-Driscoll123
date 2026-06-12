@@ -1,12 +1,15 @@
-import { cart, calculateCartCount} from "../../data/cart.js";
+import { cart } from "../../data/cart-class.js";
 import { getProduct } from "../../data/products.js";
 import { deliveryOptions, getDeliveryOption } from "../../data/deliveryOptions.js";
 import formatCurrency from "../utils.js";
+import { addOrder } from "../../data/orders.js";
+
 
 export function renderPaymentSummary(){
+  let cartItems = cart.getCartItems();
   let productPriceCents = 0;
   let shippingPriceCents = 0;
-  cart.forEach((cartItem) => {
+  cartItems.forEach((cartItem) => {
     const product = getProduct(cartItem.productId);
     productPriceCents += product.priceCents * cartItem.quantity;
 
@@ -26,7 +29,7 @@ export function renderPaymentSummary(){
       </div>
 
       <div class="payment-summary-row">
-        <div>Items (${calculateCartCount()}):</div>
+        <div>Items (${cart.calculateCartCount()}):</div>
         <div class="payment-summary-money">$${formatCurrency(productPriceCents)}</div>
       </div>
 
@@ -50,12 +53,37 @@ export function renderPaymentSummary(){
         <div class="payment-summary-money">$${formatCurrency(totalPriceCents)}</div>
       </div>
 
-      <button class="place-order-button button-primary">
+      <button class="place-order-button button-primary js-place-order-button">
         Place your order
       </button>
     </div>
    `
   document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHTML;
+
+  document.querySelector('.js-place-order-button')
+    .addEventListener('click', async() => {
+      try{
+        const response = await fetch('https://supersimplebackend.dev/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ cart: cart })
+      });
+
+      const order = await response.json();
+      console.log(order);
+      addOrder(order);
+
+      }
+      catch(error) {
+        console.log("try again later");
+      }
+
+      
+
+      
+    });
+
 }
 
-renderPaymentSummary();

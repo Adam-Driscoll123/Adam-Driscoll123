@@ -32,7 +32,7 @@ button{
   font-size: 15px;
 }
 .add-button,
-.delete-button{
+.bin-button{
   padding: 10px;
   font-weight: 700;
   color: white;
@@ -41,6 +41,6 @@ button{
 .add-button{
   background-color: #028002;
 }
-.delete-button{
+.bin-button{
   background-color: #8a0000;
 }

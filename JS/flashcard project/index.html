@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/general.css"></link>
+    <link rel="stylesheet" href="styles/index.css"></link>
+    <link rel="stylesheet" href="styles/flashcard.css"></link>
+    <link rel="stylesheet" href="styles/edit.css"></link>
+  </head>
+  <body>
+    <div class="header">
+        <div class="header__left">
+          <img class="header__left logo "src="images/placeholder.png">
+          <div class="header__left title">
+            <a href="index.html">Flashcard Maker</a>
+          </div>
+        </div>
+        <div class="header__middle">
+          <div class="header__middle link">How it works</div>
+          <div class="header__middle link">About us</div>
+          <div class="header__middle link">Contact us</div>
+        </div>
+        <div class="header__right">
+          <button class="header__right theme-button js-theme-button">
+            <img class="theme-button icon" src="images/color-button.png">
+          </button>
+        </div>
+    </div>
+
+    <div class="page-body js-page-body"></div> 
+    
+    <div id="overlay">
+      <div id="overlay__container">
+        <div>Are you sure you want to delete this flashcard?</div>
+        <div id="overlay__buttons__row">
+          <button id="overlay__delete__button">Delete</button>
+          <button id="overlay__close__button">X</button>
+        </div>
+        
+      </div>
+    </div>
+   
+    
+    
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/flashcard.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+
+.flashcard-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.flashcard-container,
+.editing-flashcard-container{
+  border: 1px solid #ababa0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.dark .flashcard-container,
+.dark .editing-flashcard-container{
+  background-color: #3a3938;
+  color: rgb(222, 222, 222);
+}
+
+.flashcard-container{
+  position: relative;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editing-flashcard-container{
+  width: 300px;
+  height: 400px;
+  display: block;
+  padding-top: 15px;
+  position: relative;
+  
+}
+.edit-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flashcard-container:hover{
+  cursor: pointer;
+}
+
+.flashcard-text{
+  font-size: 20px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.bin-button{
+  background-color: white;
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: transparent;
+}
+.bin-button:hover{
+  opacity: 0.8;
+  color: white;
+}
+
+.icon-image{
+  width: 20px;
+  height: 20px;
+ 
+}

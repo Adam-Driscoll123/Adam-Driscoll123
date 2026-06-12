@@ -1,4 +1,4 @@
-import { calculateCartCount } from "../../data/cart.js";
+import { cart } from "../../data/cart-class.js";
 
 export function renderCheckoutHeader() {
   let html = 
@@ -13,7 +13,7 @@ export function renderCheckoutHeader() {
 
     <div class="checkout-header-middle-section">
       Checkout (<a class="return-to-home-link js-checkout-count"
-        href="amazon.html">${Number(calculateCartCount()) + " items"}</a>)
+        href="amazon.html">${Number(cart.calculateCartCount()) + " items"}</a>)
     </div>
 
     <div class="checkout-header-right-section">

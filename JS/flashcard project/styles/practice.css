@@ -1,0 +1,25 @@
+.left-button,
+.right-button{
+  position: absolute;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.left-button{
+  left: 5px;
+}
+.right-button{
+  right: 5px;
+}
+
+.buttons-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: aqua;
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  left: 0px;
+}

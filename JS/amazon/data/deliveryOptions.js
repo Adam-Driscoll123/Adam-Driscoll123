@@ -31,7 +31,7 @@ export function getDeliveryOption(deliveryOptionId) {
   return deliveryOption || deliveryOptions[0];
 }
 
-export function calculateDeliveryDate(deliveryOption){
+export function calculateDeliveryDate(deliveryOption, orderTime=undefined){
   let deliveryDays = deliveryOption.deliveryDays;
   let deliveryDate;
   
@@ -44,7 +44,5 @@ export function calculateDeliveryDate(deliveryOption){
     today = today.add(1, 'days');
   }
 
-  const dateString = today.format('dddd, MMMM, D');
-
-  return dateString;
+  return today;
 }

@@ -1,0 +1,47 @@
+
+.flashcard__buttons__row{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin-bottom: 10px;
+}
+
+.edit-flashcard-button,
+.practice-button{
+  width: 600px;
+  color: #F8FAFC;
+  font-size: 30px;
+  border: none;
+  box-shadow: 0px 2px 6px #888888;
+  padding: 5px 0px;
+  transition: margin 0.2s;
+}
+.edit-flashcard-button:hover,
+.practice-button:hover{
+  
+  margin: -3px 0px;
+}
+.edit-flashcard-button:active,
+.practice-button:active{
+  opacity: 0.9;
+}
+
+.practice-button{
+  background-color: #FF4242;
+}
+.edit-flashcard-button{
+  background-color: #08B2E3;
+  
+}
+
+.dark .practice-button{
+  background-color: #8e0101;
+  color: rgb(220, 220, 220);
+}
+
+.dark .edit-flashcard-button{
+  background-color: #1691b4;
+  color: rgb(220, 220, 220);
+}
+

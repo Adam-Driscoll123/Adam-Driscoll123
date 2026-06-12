@@ -1,25 +1,27 @@
-import {cart, removeFromCart, calculateCartCount, updateItemQuantity, updateDeliveryOption} from '../../data/cart.js';
+import {cart } from '../../data/cart-class.js';
 import {products, getProduct} from '../../data/products.js';
-import { formatCurrency } from '../utils.js';
+import { formatCurrency, formatDate} from '../utils.js';
 import {calculateDeliveryDate, deliveryOptions, getDeliveryOption} from '../../data/deliveryOptions.js';
 import { renderPaymentSummary } from './paymentSummary.js';
 import { renderCheckoutHeader } from './checkoutHeader.js';
 
-export function generateHTML(){
+export function renderOrderSummary(){
+  let cartItems = cart.getCartItems();
   let cartSummaryHTML = '';
-
+  
   renderPaymentSummary();
   renderCheckoutHeader();
   
   //Find if product is in the cart and add to HTML if so
-  cart.forEach((cartItem) => {
+  cartItems.forEach((cartItem) => {
+    console.log(cartItems);
     const productId = cartItem.productId;
-    const matchingProduct = getProduct(productId);
-
+    let matchingProduct = getProduct(productId);
     const deliveryOptionId = cartItem.deliveryOptionId;
-    const dateString = calculateDeliveryDate(deliveryOptionId);
-    
-    
+    const deliveryOption = getDeliveryOption(deliveryOptionId);
+    let dateString = formatDate(calculateDeliveryDate(deliveryOption));
+    console.log(dateString);
+
     cartSummaryHTML += 
     `
     <div class="header-content"></div>
@@ -37,7 +39,7 @@ export function generateHTML(){
             ${matchingProduct.name}
           </div>
           <div class="product-price">
-            $${formatCurrency(matchingProduct.priceCents)}
+            ${matchingProduct.getPrice()}
           </div>
           <div class="product-quantity">
             <span>
@@ -79,8 +81,8 @@ export function generateHTML(){
   document.querySelectorAll('.js-delete-link').forEach((link) => {
     link.addEventListener('click', () => {
       const productId = link.dataset.productId;
-      removeFromCart(productId);
-      generateHTML();
+      cart.removeFromCart(productId);
+      renderOrderSummary();
     });
   });
 
@@ -90,7 +92,7 @@ export function generateHTML(){
       const productId = link.dataset.productId;
       let container = document.querySelector(`.js-cart-item-container-${productId}`);
       container.classList.add('is-editing-quantity');
-      generateHTML();
+     
     });
   });
 
@@ -105,8 +107,8 @@ export function generateHTML(){
   document.querySelectorAll('.js-delivery-option').forEach((element) => {
     element.addEventListener('click', () => {
       const {productId, deliveryOptionId} = element.dataset;
-      updateDeliveryOption(productId, deliveryOptionId);
-      generateHTML();
+      cart.updateDeliveryOption(productId, deliveryOptionId);
+      renderOrderSummary();
     });
   });
 
@@ -120,10 +122,10 @@ export function generateHTML(){
       return;  
     }
     
-    updateItemQuantity(productId, quantityInput)
-    updateCheckoutHeader();
+    cart.updateItemQuantity(productId, quantityInput)
+    renderCheckoutHeader();
     document.querySelector('.js-quantity-label').innerHTML = quantityInput;
-  
+    renderOrderSummary();
   }
 
   function deliveryOptionsHTML(matchingProduct, cartItem, deliveryOptionId){
@@ -161,7 +163,7 @@ export function generateHTML(){
   }
 }
 
-generateHTML();
+
 
 
 
