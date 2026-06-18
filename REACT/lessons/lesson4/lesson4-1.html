@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="styles/lesson4.css"> 
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+    <script src="https://unpkg.com/supersimpledev/chatbot.js"></script>
+
+    <script type="text/babel">
+
+      function ButtonComponent({ buttonText }) {
+
+        return (
+          <>
+            <button 
+              className="form-button">
+              {buttonText}
+            </button>
+          </>
+        )
+      }
+
+      function PasswordComponent() {
+        let [showPassword, setShowPassword] = React.useState(false);
+
+        function toggleShowPassword() {
+          if (!showPassword) { setShowPassword(true); }
+          else { setShowPassword(false); }
+        }
+        return (
+            <>
+              <input
+                placeholder="Password"
+                className="input-field"
+                type={showPassword ? 'text' : 'password'} />
+            </>
+          )
+      }
+
+      function InputComponent({ placeholder }) {
+        
+  
+        return (
+          <>
+            <input 
+              placeholder={placeholder}
+              className="input-field"/>
+          </>
+        )
+      }
+
+      function App() {
+        
+        return (
+          <div className="app-container">
+            <p className="title">Hello, welcome to my website</p>
+            <div className="inputs-container">
+              <InputComponent placeholder="Email" />
+              <PasswordComponent placeholder="Password" />
+            </div>
+
+            <div className="buttons-container">
+              <ButtonComponent 
+                buttonText="Login" />
+              <ButtonComponent buttonText="Sign up" />
+            </div>
+          </div>
+        ) 
+        
+      }
+
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>
