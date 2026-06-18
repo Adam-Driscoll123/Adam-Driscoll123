@@ -1,10 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { ChatInput } from './components/ChatInput.jsx'
+import { Chatbot } from 'supersimpledev'
+import ChatMessages from './components/ChatMessages.jsx'
+import { ChatMessage } from './components/ChatMessage.jsx'
 import './App.css'
 
 function App () {
-  const [chatMessages, setChatMessages] = React.useState([]);
+  const [chatMessages, setChatMessages] = useState([]);
   
   return (
   <div className="app-container">
