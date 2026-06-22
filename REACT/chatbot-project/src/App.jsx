@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ChatInput } from './components/ChatInput.jsx'
 import { Chatbot } from 'supersimpledev'
 import ChatMessages from './components/ChatMessages.jsx'
@@ -6,7 +6,14 @@ import { ChatMessage } from './components/ChatMessage.jsx'
 import './App.css'
 
 function App () {
-  const [chatMessages, setChatMessages] = useState([]);
+  let [chatMessages, setChatMessages] = useState(
+    JSON.parse(localStorage.getItem('messages')) || []
+    
+  );
+
+  useEffect(() => {
+    localStorage.setItem('messages', JSON.stringify(chatMessages));
+  }, chatMessages);
   
   return (
   <div className="app-container">

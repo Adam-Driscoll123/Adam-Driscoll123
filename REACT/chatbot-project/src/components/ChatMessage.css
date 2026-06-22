@@ -19,3 +19,9 @@
   max-width: 300px;
   word-wrap: break-word;
 }
+
+.message-timestamp{
+  color: grey;
+  font-size: 12px;
+  margin-top: 10px;
+}

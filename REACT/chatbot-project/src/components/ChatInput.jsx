@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Chatbot } from 'supersimpledev'
 import './ChatInput.css'
+import dayjs from 'dayjs';
 
 export function ChatInput({ chatMessages, setChatMessages }) {
   const [inputText, setInputText] = useState('');
@@ -12,6 +13,7 @@ export function ChatInput({ chatMessages, setChatMessages }) {
 
   async function sendMessage() { 
     if (isLoading || inputText==='') { return; }
+    let time = dayjs().format('HH:mm');
 
     
     setInputText('');
@@ -21,7 +23,8 @@ export function ChatInput({ chatMessages, setChatMessages }) {
       {
         message: inputText,
         sender: "user",
-        id: crypto.randomUUID()
+        id: crypto.randomUUID(),
+        time: time
       }
     ]
 
@@ -43,7 +46,8 @@ export function ChatInput({ chatMessages, setChatMessages }) {
       {
         message: response,
         sender: 'robot',
-        id: crypto.randomUUID()
+        id: crypto.randomUUID(),
+        time: time
       }
     ]);
     setIsLoading(false);
@@ -52,6 +56,11 @@ export function ChatInput({ chatMessages, setChatMessages }) {
   function checkKeyDown(event) {
     if (event.key==='Enter') { sendMessage() }
     else if (event.key==='Escape'){ setInputText('') }
+  }
+  
+  function clearMessages() {
+    localStorage.setItem('messages', JSON.stringify([]));
+    setChatMessages([]);
   }
 
   return (
@@ -67,7 +76,13 @@ export function ChatInput({ chatMessages, setChatMessages }) {
       <button
         onClick={sendMessage}
         className="send-button"
-        >Send</button>
+        >Send
+      </button>
+      <button
+        onClick={clearMessages}
+        className="clear-button">
+        Clear
+      </button>
     </div>
   );
 }
