@@ -1,4 +1,4 @@
-import { formatMoney } from "../../utils/money";
+import { formatMoney } from "../../utils/utils.js";
 
 export function PaymentSummary({ paymentSummary }) {
   return (

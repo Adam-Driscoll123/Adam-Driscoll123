@@ -18,6 +18,7 @@
 
       function App() {
         let [count, setCount] = React.useState(0);
+        let [autoClick, setAutoClick] = React.useState(false);
 
         function increaseCount() {
           setCount(count+1);
@@ -25,12 +26,27 @@
         function resetCount() {
           setCount(0);
         }
+        function autoClick() {
+          if(!autoClick){
+            let buttonElem
+            setAutoClick(true);
+            setInterval(() => {
+              
+
+          }, 1000)
+          }
+          
+        }
+        function toggleAutoClick(){
+          if (autoClick) { setAutoClick(false); }
+          else{ setAutoClick(true); }
+        }
 
         return(
           <>
             <button onClick={increaseCount}>Clicked {count} times</button>
             <button onClick={resetCount}>Reset</button>
-            <button>Auto Click</button>
+            <button onClick={autoClick}>Auto Click</button>
           </>
         )
       }

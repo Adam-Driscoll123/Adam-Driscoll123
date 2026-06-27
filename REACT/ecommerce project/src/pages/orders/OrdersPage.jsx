@@ -4,17 +4,19 @@ import { Link } from 'react-router';
 import axios from 'axios';
 import { useState, useEffect, Fragment } from 'react';
 import dayjs from 'dayjs'
-import { formatMoney } from '../../utils/money.js';
+import { formatMoney } from '../../utils/utils.js';
 
 
 export function OrdersPage({ cart }) {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/orders?expand=products')
-      .then((response) => {
-        setOrders(response.data)
-      })
+    async function getOrderData() {
+      let response = await axios.get('/api/orders?expand=products')
+      setOrders(response.data);
+    }
+    
+    getOrderData();
   }, [])
 
   return (
@@ -52,7 +54,9 @@ export function OrdersPage({ cart }) {
 
                 <div className="order-details-grid">
                   {order.products.map((orderProduct) => {
+                    
                     return (
+                      
                       <Fragment>
                         <div className="product-image-container">
                           <img src={orderProduct.product.image} />
@@ -75,7 +79,7 @@ export function OrdersPage({ cart }) {
                         </div>
 
                         <div className="product-actions">
-                          <Link to="/tracking">
+                          <Link to={`/tracking/${order.id}/${orderProduct.product.id}`}>
                             <button className="track-package-button button-secondary">
                               Track package
                             </button>
