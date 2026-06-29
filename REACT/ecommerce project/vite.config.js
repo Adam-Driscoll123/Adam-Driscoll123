@@ -13,5 +13,9 @@ export default defineConfig({
         target: 'http://localhost:3000'
       }
     }
+  },
+
+  build: {
+    outDir: '../ecommerce-backend-ai-main/dist'
   }
 })
